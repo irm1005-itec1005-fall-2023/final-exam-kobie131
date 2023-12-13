@@ -67,3 +67,265 @@ body {
 /*
  * ADD YOUR STYLES HERE
  */
+/* Header styles */
+header {
+  background-color: #0c0a3e; /* Dark Purple */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #797979; /* Grey */
+  border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #cdb4db; /* Lavender Purple */
+}
+
+.skills {
+  background-color: #bde0fe; /* Light Blue */
+  padding: 2rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  background-color: #ffc8dd; /* Light Pink */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Work section */
+.my-work {
+  padding: 2rem 1rem;
+  background-color: #a2d2ff; /* Lighter Blue */
+  display: grid;
+  grid-template-columns: 1fr; /* One column layout by default */
+  gap: 2rem;
+  padding: 2rem 1rem;  
+}
+
+
+.project {
+  background-color: #ffffff; /* Light background for the project cards */
+  padding: 1rem;
+  border-radius: 8px; /* Optional: rounded corners for the cards */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: shadow for depth */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* Slightly rounded corners for the images */
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  margin: 0.5rem 0;
+}
+
+/* Contact section */
+.contact {
+  background-color: #f7ead7;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+  background-color: #797979; /* Grey */
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #0c0a3e; /* Dark Purple */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+
+.project h3 {
+  order: 2; /* Place the info below the image */
+  width: 100%; /* Text container takes full width */
+}
+
+.about-me-info {
+  margin-left: 0;
+  margin-top: 2rem;
+}
+
+.about-me-contact-button {
+  padding: 0.5rem 1rem;
+}
+
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 800px) {
+  header, .page-container, footer {
+    padding: 1rem 10%;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+ 
+  .skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+ 
+  /* Specific styles for different skill boxes */
+  .skill-box.web-dev {
+    grid-column: 1 / 3; /* Span two columns */
+    grid-row: 1; /* First row */
+    background-color: lavender; /* Example color */
+  }
+ 
+  .skill-box.ui-ux {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: lightpink; /* Example color */
+  }
+ 
+  .skill-box.css {
+    grid-column: 4;
+    grid-row: 1;
+    background-color: lightpink; /* Example color */
+  }
+ 
+  .skill-box.js {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: lightpink; /* Example color */
+  }
+ 
+  .skill-box.html {
+    grid-column: 1 / 3; /* Span two columns */
+    grid-row: 2; /* Second row */
+    background-color: lightblue; /* Example color */
+  }
+ 
+  .skill-box.github {
+    grid-column: 4;
+    grid-row: 2;
+    background-color: thistle; /* Example color */
+  }
+
+ 
+
+  .my-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns layout */
+    text-align: center;
+    /*gap: 1rem;  Space between the columns */
+  }  
+
+  .my-work-section h2 {
+    display: inline-block; /* Allows the title to be centered by text-align */
+    width: 100%; /* Full width to enforce the centering */
+    margin-top: 2rem; /* Spacing from the top */
+    margin-bottom: 2rem; /* Spacing from the content below */
+  }
+  /* Styles for project cards on desktop */
+  .project {
+    display: flex; /* Use flexbox for laying out the image and the text side by side */
+    align-items: center; /* Align the items vertically */
+    justify-content: center; /* Center the items horizontally */
+  }
+
+  .project h3 {
+    order: 2; /* Place the info below the image */
+    width: 100%; /* Text container takes full width */
+    margin-top: 1rem; /* Space between the button/input and the title */
+  }
+
+  .project img {
+    /*width: 50vw; ach image will take up half of the viewport width */
+    max-width: 500px; /* Optional: limit the size so it doesn't get too large */
+    height: 50vw; /* Height is also set to half of the viewport width to maintain a square */
+    max-height: 500px; /* Optional: limit the size so it doesn't get too large */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    margin-bottom: 1rem;
+  }  
+
+
+  /* About me section styling */
+.about-me {
+  background-color: #ffc8dd; /* Light Pink */
+  padding: 4rem 0; /* Top and Bottom Padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me-content {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Set a max-width for the content */
+  width: 100%;
+}
+
+.about-me img {
+  width: 100%;
+  max-width: 400px; /* Set a max-width for the image */
+  height: auto;
+  margin-right: 2rem; /* Add space between the image and the text */
+}
+
+.about-me-text {
+  text-align: left;
+  flex: 1; /* Take the remaining space */
+}
+
+.about-me-contact-button {
+  display: inline-block;
+  background-color: #ffafcc; /* Light Pink */
+  color: #0c0a3e; /* Dark Purple */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+}
