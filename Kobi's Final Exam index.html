@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+
+<head>
+  <!-- Set the page title -->
+  <title>Final Exam</title>
+
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+
+  <!-- Set some basic CSS for the header and body -->
+  <link rel="stylesheet" href="./style.css" />
+
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/window.svg" type="image/svg+xml" />
+
+
+</head>
+
+
+<body>
+
+
+  <!--
+
+    FINAL EXAM CONTENT
+
+    ALL OF THE CONTENT BELOW HAS BEEN PROVIDED FOR YOU SO
+    THAT YOU CAN FOCUS ON THE HTML STRUCTURE AND SEMANTICS.
+
+    ---------------------------------------------
+
+    # HEADER SECTION
+
+Site Header (hidden text - not visible on screen)
+    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-light.svg)
+    Contact Us
+
+    # MAIN SECTION
+
+    ## HERO SECTION
+
+    Amy's Web Development Agency (hidden text - not visible on screen)
+    Web Development Solutions Made Easy
+    Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.
+
+
+    ## SKILLS SECTION
+
+    My Skills (hidden text - not visible on screen)
+    Web Development
+    UI/UX
+    CSS
+    JavaScript
+    HTML
+    GitHub
+
+    ## ABOUT ME SECTION
+
+    About me (hidden text - not visible on screen)
+    Picture of Amy's in business atire with a pink background (<- image alt text <- ./images/about/about.jpg)
+
+    Hey, I'm Amy. Are you ready to level up your web project?
+
+    I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+
+    Contact me
+
+    ## MY WORK SECTION
+My Work
+
+    Screenshot of Tutorial Exercise 03 (<- image alt text <- ./images/work/work-1.png)
+    Tutorial Exercise 03
+    HTML
+    CSS
+
+    Screenshot of Tutorial Exercise 05 (<- image alt text <- ./images/work/work-2.png)
+    Tutorial Exercise 05
+    HTML
+    CSS
+
+    Screenshot of Tutorial Exercise 07 (<- image alt text <- ./images/work/work-3.png)
+    Tutorial Exercise 07
+    HTML
+    CSS
+
+    Screenshot of Tutorial Exercise 09 (<- image alt text <- ./images/work/work-4.png)
+    Tutorial Exercise 09
+    HTML
+    CSS
+    JavaScript
+
+    Book a call with me
+
+    ## CONTACT ME SECTION
+
+    Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"
+
+    Contact Me
+
+    ## FOOTER SECTION
+
+    Site Footer (hidden text - not visible on screen)
+
+ Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-dark.svg)
+    © 2023 Amy's Web Development Agency
+
+  -->
+  <header>
+    <img src="./images/logo/logo-light.svg" alt="Amy's Web Development Agency Logo" class="logo">
+    <nav>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-container">
+      <h1>Complete Your Final Exam Here</h1>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="sr-only">Amy's Web Development Agency</h1>
+      <p>Web Development Solutions Made Easy</p>
+      <p>Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2 class="sr-only">My Skills</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>UI/UX</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+      <h2 class="sr-only">About me</h2>
+      <img src="./images/about/about.jpg" alt="Picture of Amy in business attire with a pink background">
+      <div class="about-me-text">
+        <h2>Hey, I'm Amy. Are you ready to level up your web project?</h2>
+        <p>I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+        <a href="#contact" class="about-me-contact-button">Contact me</a>
+      </div>
+    </div>
+    </section>
+
+    <!-- My Work Section -->
+    <section class="my-work">
+      <h2>My Work</h2>
+      <br/>
+      
+      <div class="project">
+        <img src="./images/work/work-1.png" alt="Screenshot of Tutorial Exercise 03" class="project-image">
+        <h3>Tutorial Exercise 03</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+      </div>
+    
+      <div class="project">
+        <img src="./images/work/work-2.png" alt="Screenshot of Tutorial Exercise 05" class="project-image">
+        <h3>Tutorial Exercise 05</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+      </div>
+    
+      <div class="project">
+        <img src="./images/work/work-3.png" alt="Screenshot of Tutorial Exercise 07" class="project-image">
+        <h3>Tutorial Exercise 07</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+      </div>
+    
+      <div class="project">
+        <img src="./images/work/work-4.png" alt="Screenshot of Tutorial Exercise 09" class="project-image">
+        <h3>Tutorial Exercise 09</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact" id="contact">
+      <p>Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect.</p>
+      <a href="#contact-form">Contact Me</a>
+    </section>
+
+
+  </main>
+
+
+</body>
+</html>
+
+
+

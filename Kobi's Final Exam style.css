@@ -1,0 +1,276 @@
+/*
+ * CSS File for the solution
+ * Final Exam
+ * You got this!
+ */
+
+/*
+ * COLOUR PALETTE
+ *
+ * YOU DO NOT NEED TO USE THESE COLOURS, BUT YOU CAN IF YOU WANT TO
+ *
+ * #cdb4db - Lavender Purple
+ * #ffc8dd - Pink
+ * #ffafcc - Light Pink
+ * #bde0fe - Light Blue
+ * #a2d2ff - Light Blue
+ * #0c0a3e - Dark Purple
+ * #797979 - Grey
+ *
+ * https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff
+ */
+
+/*
+ * FOR YOUR DESKTOP VIEWPORT I WOULD RECOMMEND THE FOLLOWING MEDIA QUERY
+ *
+ * @media screen and (min-width: 800px) {
+ *    ... your styles here ...
+ * }
+ */
+
+ html {
+  font-size: 1.0rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #f7ead7;
+}
+
+/*
+ * SR-ONLY
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+ }
+ *
+ * SHARED STYLES
+ */
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.0rem;
+}
+
+/*
+ * ADD YOUR STYLES HERE
+ */
+ /* Header styles */
+header {
+  background-color: #0c0a3e; /* Dark Purple */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+header .logo {
+  width: 150px; 
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #797979; /* Grey */
+  border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #cdb4db; /* Lavender Purple */
+}
+
+/* Skills section */
+.skills {
+  padding: 2rem 1rem;
+  background-color: #bde0fe; /* Light Blue */
+  text-align: center;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills li {
+  background-color: #ffc8dd; /* Pink */
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+
+
+
+/* Work section */
+.my-work {
+  padding: 2rem 1rem;
+  background-color: #a2d2ff; /* Lighter Blue */
+  display: grid;
+  grid-template-columns: 1fr; /* One column layout by default */
+  gap: 2rem;
+  padding: 2rem 1rem;  
+}
+
+
+.project {
+  background-color: #ffffff; /* Light background for the project cards */
+  padding: 1rem;
+  border-radius: 8px; /* Optional: rounded corners for the cards */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: shadow for depth */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* Slightly rounded corners for the images */
+  margin-bottom: 1rem;
+}
+.project h3 {
+  margin: 0.5rem 0;
+}
+
+/* Contact section */
+.contact {
+  background-color: #f7ead7;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+  background-color: #797979; /* Grey */
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #0c0a3e; /* Dark Purple */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+
+.project h3 {
+  order: 2; /* Place the info below the image */
+  width: 100%; /* Text container takes full width */
+}
+
+.about-me-info {
+  margin-left: 0;
+  margin-top: 2rem;
+}
+
+.about-me-contact-button {
+  padding: 0.5rem 1rem;
+}
+
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 800px) {
+  header, .page-container, footer {
+    padding: 1rem 10%;
+  }
+
+  .skills ul {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+ 
+
+  .my-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns layout */
+    text-align: center;
+    /*gap: 1rem;  Space between the columns */
+  }  
+
+  .my-work-section h2 {
+    display: inline-block; /* Allows the title to be centered by text-align */
+    width: 100%; /* Full width to enforce the centering */
+    margin-top: 2rem; /* Spacing from the top */
+    margin-bottom: 2rem; /* Spacing from the content below */
+  }
+  /* Styles for project cards on desktop */
+  .project {
+    display: flex; /* Use flexbox for laying out the image and the text side by side */
+    align-items: center; /* Align the items vertically */
+    justify-content: center; /* Center the items horizontally */
+  }
+
+
+  .project img {
+    width: 50vw; /* Each image will take up half of the viewport width */
+    max-width: 500px; /* Optional: limit the size so it doesn't get too large */
+    height: 50vw; /* Height is also set to half of the viewport width to maintain a square */
+    max-height: 500px; /* Optional: limit the size so it doesn't get too large */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }  
+
+
+  /* About me section styling */
+.about-me {
+  background-color: #ffc8dd; /* Light Pink */
+  padding: 4rem 0; /* Top and Bottom Padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me-content {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Set a max-width for the content */
+  width: 100%;
+}
+
+.about-me img {
+  width: 100%;
+  max-width: 400px; /* Set a max-width for the image */
+  height: auto;
+  margin-right: 2rem; /* Add space between the image and the text */
+}
+
+.about-me-text {
+  text-align: left;
+  flex: 1; /* Take the remaining space */
+}
+
+.about-me-contact-button {
+  display: inline-block;
+  background-color: #ffafcc; /* Light Pink */
+  color: #0c0a3e; /* Dark Purple */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+}
